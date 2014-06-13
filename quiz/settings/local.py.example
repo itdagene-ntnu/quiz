@@ -1,0 +1,17 @@
+from quiz.settings.base import *
+
+DEBUG = True
+TEMPLATE_DEBUG = True
+
+SECRET_KEY = '<SECRET KEY HERE>'
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'quiz',
+        'USER': '',
+        'PASSWORD': '',
+        'HOST': 'localhost',
+        'PORT': '5432'
+    }
+}

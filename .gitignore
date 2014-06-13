@@ -1,3 +1,5 @@
 venv/
-.DS_Store
 quiz/settings/local.py
+
+.DS_Store
+*.pyc
