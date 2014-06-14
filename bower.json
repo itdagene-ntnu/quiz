@@ -1,0 +1,21 @@
+{
+  "name": "quiz",
+  "version": "0.0.1",
+  "homepage": "https://github.com/itdagene-ntnu/quiz",
+  "authors": [
+    "Øyvind Robertsen <me@oyvindrobertsen.com>"
+  ],
+  "description": "Quiz app for itDAGENE",
+  "license": "BSD",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "unsemantic": "*"
+  }
+}

@@ -1,6 +1,6 @@
 venv/
 .idea/
 quiz/settings/local.py
-
+quiz/files/static/lib/
 .DS_Store
 *.pyc
