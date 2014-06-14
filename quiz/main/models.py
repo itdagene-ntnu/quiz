@@ -18,6 +18,6 @@ class Question(models.Model):
 
 class Choice(models.Model):
     question = models.ForeignKey(Question)
-    correct_answer = models.OneToOneField(Question, 
-            related_name='correct_answer')
+    correct_answer = models.OneToOneField(Question,
+                                          related_name='correct_answer')
     text = models.CharField(max_length=200)
