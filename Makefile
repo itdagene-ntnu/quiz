@@ -38,6 +38,9 @@ migrate:
 	python manage.py migrate
 
 setup: update
+	@echo 'Compiling Stylesheets'
+	@echo '---------------------'
+	grunt sass
 	@echo 'Copying settings example'
 	@echo '------------------------'
 	cp $(PROJECT_NAME)/settings/local.py.example \
