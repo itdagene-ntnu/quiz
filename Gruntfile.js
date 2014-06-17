@@ -4,7 +4,9 @@ module.exports = function(grunt) {
       compile: {
         files: {
           './quiz/files/static/css/base.css': 
-            './quiz/files/static/css/scss/base.scss'
+            './quiz/files/static/css/scss/base.scss',
+          './quiz/main/static/main/css/landing.css':
+            './quiz/main/static/main/css/scss/landing.scss'
         }
       },
     }

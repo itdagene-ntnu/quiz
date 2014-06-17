@@ -1,7 +1,17 @@
 {% extends "base.html" %}
 
+{% block include %}
+<link rel="stylesheet" href="{{ STATIC_URL }}main/css/landing.css">
+{% endblock %}
+
 {% block content %}
-<div class="grid-70 push-15">
+<div class="grid-70 push-15 text-center">
     <img src="{{ STATIC_URL }}img/itdagene.svg" id="logo"></img>
+    <a href="#" class="button button-large">Participate</a><br/>
+    <h3>QuizNavn</h3>
+    Beskrivelse her Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Etiam sagittis eros ac placerat vehicula. Sed hendrerit dignissim dolor,
+    nec lobortis tellus aliquam at. Pellentesque varius massa eu nisi consequat
+    porta id nec nisi.
 </div>
 {% endblock %}
