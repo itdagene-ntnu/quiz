@@ -14,8 +14,11 @@
 </head>
 <body>
     <div class="grid-container">
-        {% block content %}
-        {% endblock %}
+        <div class="grid-70 push-15 text-center">
+            <img src="{{ STATIC_URL }}img/itdagene.svg" id="logo" />
+            {% block content %}
+            {% endblock %}
+        </div>
     </div>
 </body>
 </html>

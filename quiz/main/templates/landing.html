@@ -5,13 +5,10 @@
 {% endblock %}
 
 {% block content %}
-<div class="grid-70 push-15 text-center">
-    <img src="{{ STATIC_URL }}img/itdagene.svg" id="logo"></img>
-    <a href="#" class="button button-large">Participate</a><br/>
-    <hr/>
-    <h2>{{ current_quiz }}</h2>
-    <p class="lead">
-        {{ current_quiz.description }}
-    </p>
-</div>
+<a href="#" class="button button-large">Participate</a><br/>
+<hr/>
+<h2>{{ current_quiz }}</h2>
+<p class="lead">
+    {{ current_quiz.description }}
+</p>
 {% endblock %}
