@@ -5,11 +5,12 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     url(
-        regex=r'^$',
-        view=include('quiz.main.urls'),
+        regex=r'^admin/',
+        view=include(admin.site.urls)
     ),
     url(
-        r'^admin/',
-        include(admin.site.urls)
+        regex=r'^',
+        view=include('quiz.main.urls'),
+        name='main'
     ),
 )

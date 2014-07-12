@@ -13,12 +13,16 @@
     {% endblock %}
 </head>
 <body>
-    <div class="grid-container">
-        <div class="grid-70 push-15 text-center">
-            <img src="{{ STATIC_URL }}img/itdagene.svg" id="logo" />
-            {% block content %}
-            {% endblock %}
-        </div>
+<div class="grid-container">
+    <div class="grid-70 push-15 text-center">
+        <img src="{{ STATIC_URL }}img/itdagene.svg" id="logo" />
+        {% block content %}
+        {% endblock %}
     </div>
+</div>
+<footer>
+    <hr />
+    <a href="http://itdagene.no">itDAGENE</a>
+</footer>
 </body>
 </html>

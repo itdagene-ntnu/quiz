@@ -1,14 +1,14 @@
 {% extends "base.html" %}
 
 {% block include %}
-<link rel="stylesheet" href="{{ STATIC_URL }}main/css/landing.css">
+    <link rel="stylesheet" href="{{ STATIC_URL }}main/css/landing.css">
 {% endblock %}
 
 {% block content %}
-<a href="#" class="button button-large">Participate</a><br/>
-<hr/>
-<h2>{{ current_quiz }}</h2>
-<p class="lead">
-    {{ current_quiz.description }}
-</p>
+    <a href="{% url 'view-quiz' current_quiz.pk %}" class="button button-large">Participate</a><br/>
+    <hr/>
+    <h2>{{ current_quiz }}</h2>
+    <p class="lead">
+        {{ current_quiz.description }}
+    </p>
 {% endblock %}
