@@ -29,3 +29,17 @@ class Choice(models.Model):
 
     def __unicode__(self):
         return self.text
+
+
+class Participant(models.Model):
+    email = models.EmailField(max_length=254)
+    phone_number = models.CharField(max_length=25)
+
+    def __unicode__(self):
+        return self.email
+
+
+class Answer(models.Model):
+    question = models.ForeignKey(Question)
+    choice = models.ForeignKey(Choice)
+    participant = models.ForeignKey(Participant)

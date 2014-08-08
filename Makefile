@@ -18,7 +18,7 @@ update_pip:
 	@echo 'Installing Python requirements'
 	@echo '------------------------------'
 # Installing Django like this until 1.7 is released
-	pip install https://www.djangoproject.com/download/1.7.b4/tarball/
+	pip install https://www.djangoproject.com/download/1.7c2/tarball/
 # Rest of requirements
 	pip install -r requirements.txt
 
